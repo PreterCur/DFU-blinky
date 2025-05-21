@@ -1,0 +1,86 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="DFU-blinky" version="2" target="8">
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="None" />
+  <project Name="DFU-blinky">
+    <configuration
+      LIBRARY_IO_TYPE="RTT"
+      Name="Common"
+      Target="GD32F103RB"
+      arm_architecture="v7M"
+      arm_compiler_variant="gcc"
+      arm_core_type="Cortex-M3"
+      arm_endian="Little"
+      arm_fp_abi="Soft"
+      arm_fpu_type="None"
+      arm_linker_heap_size="2048"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="2048"
+      arm_linker_variant="GNU"
+      arm_simulator_memory_simulation_parameter="ROM;0x08000000;0x00020000;RAM;0x20000000;0x00005000"
+      arm_target_device_name="GD32F103RB"
+      arm_target_interface_type="SWD"
+      c_preprocessor_definitions="GD32F10X_MD"
+      c_user_include_directories="./Include"
+      debug_register_definition_file="$(ProjectDir)/GD32F10x_MD_Registers.xml"
+      debug_stack_pointer_start="__stack_end__"
+      debug_target_connection="J-Link"
+      gcc_entry_point="Reset_Handler"
+      link_dedupe_code="Yes"
+      link_linker_script_file="Setup/SEGGER_Flash.icf"
+      linker_memory_map_file="$(ProjectDir)/GD32F103RB_MemoryMap.xml"
+      linker_output_format="hex"
+      linker_section_placement_file="Setup/flash_placement.xml"
+      linker_section_placements_segments="FLASH1 RX 0x00000000 0x00100000;RAM1 RWX 0x20000000 0x00010000"
+      macros="DeviceHeaderFile=$(PackagesDir)/GD32F10x/Device/Include/gd32f10x.h;DeviceSystemFile=$(PackagesDir)/GD32F10x/Device/Source/system_gd32f10x.c;DeviceVectorsFile=$(PackagesDir)/GD32F10x/Source/gd32f10x_md_Vectors.s;DeviceFamily=GD32F10x;DeviceSubFamily=GD32F103"
+      project_directory=""
+      project_type="Executable" />
+    <configuration
+      Name="Debug"
+      debug_register_definition_file="GD32F10x_MD_Registers.xml" />
+    <folder Name="Peripherals">
+      <file file_name="Peripherals/gd32f10x_adc.c" />
+      <file file_name="Peripherals/gd32f10x_bkp.c" />
+      <file file_name="Peripherals/gd32f10x_can.c" />
+      <file file_name="Peripherals/gd32f10x_crc.c" />
+      <file file_name="Peripherals/gd32f10x_dac.c" />
+      <file file_name="Peripherals/gd32f10x_dbg.c" />
+      <file file_name="Peripherals/gd32f10x_dma.c" />
+      <file file_name="Peripherals/gd32f10x_enet.c" />
+      <file file_name="Peripherals/gd32f10x_exmc.c" />
+      <file file_name="Peripherals/gd32f10x_exti.c" />
+      <file file_name="Peripherals/gd32f10x_fmc.c" />
+      <file file_name="Peripherals/gd32f10x_fwdgt.c" />
+      <file file_name="Peripherals/gd32f10x_gpio.c" />
+      <file file_name="Peripherals/gd32f10x_i2c.c" />
+      <file file_name="Peripherals/gd32f10x_misc.c" />
+      <file file_name="Peripherals/gd32f10x_pmu.c" />
+      <file file_name="Peripherals/gd32f10x_rcu.c" />
+      <file file_name="Peripherals/gd32f10x_rtc.c" />
+      <file file_name="Peripherals/gd32f10x_sdio.c" />
+      <file file_name="Peripherals/gd32f10x_spi.c" />
+      <file file_name="Peripherals/gd32f10x_timer.c" />
+      <file file_name="Peripherals/gd32f10x_usart.c" />
+      <file file_name="Peripherals/gd32f10x_wwdgt.c" />
+      <file file_name="Peripherals/systick.c" />
+    </folder>
+    <folder Name="Setup">
+      <file file_name="Setup/flash_placement.xml" />
+    </folder>
+    <folder Name="Source">
+      <file file_name="Source/main.c" />
+      <file file_name="Source/system_gd32f10x.c" />
+    </folder>
+    <folder Name="System">
+      <file file_name="System/Cortex_M_Startup.s" />
+      <file file_name="GD32F10x/Source/gd32f10x_md_Vectors.s" />
+      <file file_name="System/thumb_crt0.s" />
+    </folder>
+    <folder Name="USBD" />
+    <file file_name="GD32F103RB_MemoryMap.xml" />
+  </project>
+</solution>
