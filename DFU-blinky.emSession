@@ -24,6 +24,7 @@
  <Project>
   <ProjectSessionItem path="DFU-blinky"/>
   <ProjectSessionItem path="DFU-blinky;DFU-blinky"/>
+  <ProjectSessionItem path="DFU-blinky;DFU-blinky;Peripherals"/>
   <ProjectSessionItem path="DFU-blinky;DFU-blinky;Setup"/>
   <ProjectSessionItem path="DFU-blinky;DFU-blinky;Source"/>
   <ProjectSessionItem path="DFU-blinky;DFU-blinky;System"/>
@@ -59,14 +60,16 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" path="Source/main.c" left="0" selected="1" top="17" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="46" useTextEdit="1" path="Source/main.c" left="0" selected="1" top="3" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="Setup/flash_placement.xml" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="88" y="2" useTextEdit="1" path="GD32F103RB_MemoryMap.xml" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="Output/Debug/Obj/DFU-blinky/DFU-blinky.ld" left="0" top="269" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="Output/Debug/Exe/DFU-blinky.map" left="0" top="5595" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="GD32F10x/Source/gd32f10x_md_Vectors.s" left="0" top="235" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="10" y="307" useTextEdit="1" path="System/Cortex_M_Startup.s" left="0" top="279" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="155" useTextEdit="1" path="System/thumb_crt0.s" left="0" top="388" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="88" y="3" useTextEdit="1" path="GD32F103RB_MemoryMap.xml" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="3" y="27" useTextEdit="1" path="Output/Debug/Obj/DFU-blinky/DFU-blinky.ld" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="83" y="5641" useTextEdit="1" path="Output/Debug/Exe/DFU-blinky.map" left="0" top="5625" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="GD32F10x/Source/gd32f10x_md_Vectors.s" left="0" top="54" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="20" y="303" useTextEdit="1" path="System/Cortex_M_Startup.s" left="0" top="161" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="44" y="155" useTextEdit="1" path="System/thumb_crt0.s" left="0" top="155" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="43" useTextEdit="1" path="Source/system_gd32f10x.c" left="0" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="5" y="127" useTextEdit="1" path="Peripherals/gd32f10x_misc.c" left="0" top="108" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="DFU-blinky" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/GIT/GD32F103/GD32F103-H103-projects/DFU-blinky" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="DFU-blinky" fileDialogDefaultFilter="*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/GIT/GD32F103/GD32F103-H103-projects/DFU-blinky" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

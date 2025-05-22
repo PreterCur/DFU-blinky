@@ -293,14 +293,14 @@ L(Pass_StackPtr):
 #endif
         //
         // Reset HardFault Status
-        //
+        //GO INTO BOOTLOADER IF HARDFAULT
 #if defined(__thumb__) && !defined(__thumb2__)
         movs    R3, #1
         lsls    R3, R3, #31
         orrs    R2, R3
         str     R2, [R1]
 #else
-        orr R2, R2, #0x80008000
+        orr R2, R2, #0x80000000
         str R2, [R1]
 #endif
         //
